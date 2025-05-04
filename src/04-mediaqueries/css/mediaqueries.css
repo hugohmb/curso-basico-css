@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*Inicio dos ajustes de telas*/
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: rgb(204, 141, 141);
+
+        .flex-pai1 {
+            flex-direction: column;
+        }
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body {
+        background: rgb(199, 150, 150);
+
+        .flex-pai2 {
+            flex-direction: row;
+        }
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: rgb(201, 168, 168);
+
+        .flex-pai3 {
+            flex-direction: row-reverse;
+        }
+    }
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: rgb(202, 188, 188);
+
+        .flex-pai4 {
+            flex-direction: row;
+        }
+    }
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background: rgb(207, 207, 207);
+    }
+
+}
+
+/*fim dos ajustes de telas */
+
+
+h1 {
+    color: rgb(206, 24, 136);
+    font-size: 40px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+    /* Adiciona uma margem superior de 30px */
+    margin-bottom: 30px;
+    /* Adiciona uma margem inferior de 30px */
+    /* margin: 30px 30px 30px 30px;  Essa propriedade é uma forma de agrupar todas as margens em uma linha de css só. */
+}
+
+
+/* inicio barra de menu*/
+ul {
+    background: black;
+    padding: 20px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li a:hover {
+    background: #ccc;
+    color: black;
+}
+
+.login {
+    float: right;
+}
+
+.login a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+a.botao {
+    padding: 15px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+a.botao:hover {
+    opacity: 0.8;
+}
+
+/*fim barra de menu*/
+
+
+header {
+    background: rgb(73, 121, 73);
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: grey;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+.flex-pai1 {
+    background: blue;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-pai1 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai2 {
+    background: blue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-pai2 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai3 {
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-pai3 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai4 {
+    background: blue;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flex-pai4 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai5 {
+    background: blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-pai5 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai6 {
+    background: blue;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-pai6 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai7 {
+    background: blue;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-pai7 div {
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai8 {
+    background: blue;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-pai8 div {
+    flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flex-pai9 {
+    background: blue;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.flex-pai9 div {
+    background: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}

@@ -1,0 +1,173 @@
+ /*dependendo do seletor, o estilo no css tem importancia menor que inline... a classe sempre terá mais força que o seletor simples. Porem, ID são mais forte que classes*/
+ .red {
+     background: red;
+ }
+
+ h3 {
+     background: blue;
+ }
+
+ h3 {
+     background: red;
+ }
+
+ h3 {
+     background: green;
+ }
+
+ /*O ultimo sempre tem prioridade*/
+
+ /* Ordem de força dos seletores:
+1 - #id
+2 - tag.class
+3 - tag
+*/
+
+ #meuid {
+     /* ID tem mais força que classes e seletores simples */
+     color: red;
+ }
+
+ .minhaClasse {
+     /* Classe tem mais força que seletores simples */
+     color: blue;
+ }
+
+ h4 {
+     /*seletor simples*/
+     color: green !important;
+     /* O !important tem mais força que qualquer outro seletor, porem não é recomendado o uso dele, pois pode causar problemas de manutenção no código.*/
+ }
+
+ #gradiente1 {
+     width: 200px;
+     height: 200px;
+     background: blue;
+     background-image: linear-gradient(blue, red);
+     /* O linear-gradient é uma propriedade que cria um gradiente linear entre duas ou mais cores. */
+ }
+
+ #gradiente2 {
+     width: 200px;
+     height: 200px;
+     background: blue;
+     background-image: linear-gradient(to right, red, green);
+     /* O linear-gradient é uma propriedade que cria um gradiente linear entre duas ou mais cores. */
+ }
+
+ #gradiente3 {
+     width: 200px;
+     height: 200px;
+     background: blue;
+     background-image: linear-gradient(to top right, blue, red);
+     /* O linear-gradient é uma propriedade que cria um gradiente linear entre duas ou mais cores. */
+ }
+
+ #gradiente4 {
+     width: 200px;
+     height: 200px;
+     background: blue;
+     background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+     /* O linear-gradient é uma propriedade que cria um gradiente linear entre duas ou mais cores. */
+ }
+
+ #gradiente5 {
+     width: 200px;
+     height: 200px;
+     background: blue;
+     background-image: radial-gradient(red, orange, yellow, green, blue, indigo, violet);
+     /* O linear-gradient é uma propriedade que cria um gradiente linear entre duas ou mais cores. */
+ }
+
+ h1 {
+     text-shadow: 2px 2px 5px red;
+     /* O text-shadow é uma propriedade que cria uma sombra no texto. A sombra é criada com um deslocamento de 2px para a direita e 2px para baixo, com um desfoque de 5px e a cor vermelha. */
+ }
+
+ .branco {
+     color: white;
+     text-shadow: 2px 2px 5px black;
+ }
+
+ .diversas {
+     color: black;
+     text-shadow: 0 0 3px #ff0000, 2px 2px 5px yellow;
+ }
+
+ .box1 {
+     width: 200px;
+     height: 200px;
+     background: gray;
+     box-shadow: 5px 5px 5px;
+ }
+
+ .box2 {
+     width: 200px;
+     height: auto;
+     background: rgb(255, 255, 255);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     /* O box-shadow é uma propriedade que cria uma sombra no elemento. A sombra é criada com um deslocamento de 0px para a direita e 4px para baixo, com um desfoque de 8px e a cor rgba(0,0,0,0.2). A segunda sombra é criada com um deslocamento de 0px para a direita e 6px para baixo, com um desfoque de 20px e a cor rgba(0,0,0,0.19). */
+     text-align: center;
+ }
+
+ .reduzido {
+     white-space: nowrap;
+     /* O white-space é uma propriedade que controla como o espaço em branco é tratado. O nowrap impede que o texto quebre em várias linhas. */
+     overflow: hidden;
+     text-overflow: ellipsis;
+     /* O text-overflow é uma propriedade que controla como o texto que não cabe no elemento é tratado. O ellipsis adiciona reticências (...) ao final do texto que não cabe no elemento. */
+     padding-bottom: 30px;
+ }
+
+ .box2:hover .reduzido {
+     white-space: normal;
+     /* O white-space é uma propriedade que controla como o espaço em branco é tratado. O normal permite que o texto quebre em várias linhas. */
+ }
+
+ ul {
+     background: black;
+     padding: 20px;
+ }
+
+ li {
+     display: inline-block;
+ }
+
+ li a {
+     color: white;
+     text-decoration: none;
+     padding: 20px;
+ }
+
+ li a:hover {
+     background: #ccc;
+     color: black;
+ }
+
+ .login {
+     float: right;
+ }
+
+ .login a:hover {
+     background-color: orangered;
+     color: white;
+ }
+
+ a.botao {
+     padding: 15px;
+     background: green;
+     color: white;
+     text-decoration: none;
+     opacity: 1;
+ }
+
+ a.botao:hover {
+     opacity: 0.8;
+ }
+
+ .transparente {
+     background: blue;
+     color: white;
+     padding: 40px;
+     opacity: 0.5;
+ }

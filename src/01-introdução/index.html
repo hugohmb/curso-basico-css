@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/01-introdução/css/estilo.css">
+</head>
+
+<body>
+
+    <h1 class="center">Introdução</h1>
+
+    <br><br>
+
+    <ul>
+        <li><a href="../01-introdução/index.html">Página Home</a></li>        
+        <li><a href="../02-float/float.html">Página Float</a></li>
+        <li><a href="../03-especificidade/especificidade.html">Página Especificidade</a></li>
+        <li><a href="../04-mediaqueries/mediaqueries.html">Página Media Queries</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="#">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+
+            </div>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <p>Em projetos web, é possível aplicar estilos (cores, fontes, tamanhos etc.) de diferentes maneiras, e cada uma
+        delas possui uma prioridade diferente. Quando mais de um estilo tenta formatar o mesmo elemento, o navegador
+        segue uma ordem de precedência para decidir qual estilo aplicar.</p>
+
+    <p>O uso de um arquivo CSS externo (com extensão .css) é bastante comum, pois permite reutilizar os mesmos estilos
+        em várias páginas do site, facilitando a padronização e a manutenção do visual. No entanto, se houver estilos
+        definidos também no próprio arquivo HTML, eles podem sobrescrever o que está no CSS externo.</p>
+
+    <p>Essa prioridade funciona da seguinte forma:</p>
+
+    <p>1 - Estilo direto na tag HTML (chamado de inline style) tem a maior prioridade.
+        Exemplo: &lt;h1&gt; style="color: red;">Título&lt;/h1&gt;</p>
+
+    <br>
+
+    <p>2 - Estilo definido dentro da tag &lt;style&gt; no &lt;head&gt; do HTML tem prioridade intermediária. Exemplo:
+    </p>
+
+    <pre><code>
+    &lt;style&gt;
+        h1 {
+          color: blue;
+        }
+        &lt;/style&gt;
+    </code></pre>
+
+    <p>3 - Estilo vindo de um arquivo CSS externo tem a menor prioridade, sendo aplicado apenas se nenhum dos anteriores
+        estiver interferindo.
+        Exemplo: style.css contendo:</p>
+
+    <pre><code>
+    h1 {
+        color: green;
+      }
+    </code></pre>
+
+    <p>Apesar dessa hierarquia, os estilos podem ser combinados. Por exemplo, a cor de um elemento pode ser definida
+        pelo estilo inline, enquanto o tamanho da fonte pode vir do CSS externo — desde que essas regras não entrem em
+        conflito (ou seja, não tentem modificar a mesma propriedade).</p>
+
+    <p>Essa flexibilidade permite um controle detalhado da aparência, mas exige atenção para evitar confusão ou
+        conflitos desnecessários.</p>
+
+    <br><br>
+
+    <hr>
+
+    <br><br>
+
+    <div class="teste0">Está DIV vai ter 300px de largura por 150px de altura.</div>
+
+    <br>
+
+    <div class="teste1">Está DIV vai ter 300px de largura por 150px de altura.</div>
+
+    <p class="p1 background01 fonte01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laborum ab
+        veritatis. Eligendi dicta illum sed veniam repudiandae natus laborum reprehenderit labore? Veritatis expedita
+        magnam esse minus quaerat provident qui?</p>
+
+    <p class="p2 background01 fonte02">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ullam hic omnis
+        repudiandae aperiam beatae eligendi minima dignissimos esse repellat quod nihil eaque fugiat aut voluptates
+        maiores, dolor id reprehenderit!</p>
+
+    <p class="p3 background01 fonte03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores inventore,
+        cum natus excepturi neque laboriosam tempore aperiam nobis corporis iste, architecto nisi distinctio, doloribus
+        harum. Ipsa voluptatibus voluptates aspernatur!</p>
+
+    <br><br><br>
+
+    <br><br>
+
+    <p class="bordas0">Borda Solida</p>
+    <p class="bordas1">Borda Pontilhada</p>
+    <p class="bordas2">Borda Tracejada</p>
+    <p class="bordas3">Borda Dupla</p>
+    <p class="bordas4">Borda Solida</p>
+    <p class="bordas5">Borda Solida Invertida</p>
+    <p class="bordas6">Borda Por Dentro</p>
+    <p class="bordas7">Borda Por Fora</p>
+    <p class="bordas8">Borda Individual</p>
+    <p class="bordas9">Borda Arredondada</p>
+
+    <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laborum ab veritatis. Eligendi
+        dicta illum sed veniam repudiandae natus laborum reprehenderit labore? Veritatis expedita magnam esse minus
+        quaerat provident qui?</p>
+
+    <p class="fonte-30 center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ullam hic omnis repudiandae
+        aperiam beatae eligendi minima dignissimos esse repellat quod nihil eaque fugiat aut voluptates maiores, dolor
+        id reprehenderit!</p>
+
+    <p class="center red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores inventore, cum natus
+        excepturi neque laboriosam tempore aperiam nobis corporis iste, architecto nisi distinctio, doloribus harum.
+        Ipsa voluptatibus voluptates aspernatur!</p>
+
+    <p id="teste">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quo ut vero corporis vitae
+        praesentium, nesciunt minima ipsa sint dolorem a voluptate doloribus adipisci. Recusandae, soluta praesentium.
+        Perspiciatis, nobis hic. </p>
+
+    <br>
+
+    <div class="exemplo-back0">
+
+    </div>
+
+    <br><br>
+
+    <div class="exemplo-back1">
+
+    </div>
+
+    <br><br>
+
+    <div class="exemplo-back2">
+
+    </div>
+
+    <br><br>
+
+    <div class="exemplo-back3">
+
+    </div>
+
+    <br><br>
+
+
+    <!--Display do tipo block. Ex:-->
+    <div class="borda"></div>
+    <h1 class="borda center">Display</h1>
+    <div class="borda"></div>
+
+    <br><br><br>
+
+    <div class="borda"></div>
+
+    <br>
+
+    <p class="borda">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi culpa quasi, illo corporis
+        distinctio eveniet cupiditate labore, itaque quaerat dicta nihil dolor laboriosam delectus magnam sed suscipit
+        fuga, necessitatibus odio.</p>
+
+    <!--Outras classes que também vem com o padrão block. Elas ficaram na mesma posição, mas ocuparam toda a extensão da página -->
+
+    <br>
+
+    <form class="borda">
+
+    </form>
+
+    <header class="borda"></header>
+
+    <footer class="borda"></footer>
+
+    <section class="borda"></section>
+
+    <br><br>
+
+    <!--Display do tipo inline: é quando tem um elemento que não inicia numa nova linha e nem ocupa toda a extensão da nossa página, mas simplesmente a extensao na mesma linha de acordo com a largura da nossa necessidade. Ex:-->
+
+    <a href="#" class="borda">Link A</a>
+    <a href="#" class="borda">Link B</a>
+    <p> Aqui um <span class="borda">exemplo de</span> paragrafo</p>
+
+    <!--Tags do tipo inline (que ficam uma ao lado da outra): <span>, <a> e <img>-->
+
+    <br>
+
+    <ul>
+        <li class="azul01">Primeiro Item</li>
+        <li class="vermelho01">Segundo Item</li>
+        <li class="amarelo01">Terceiro Item</li>
+    </ul>
+
+    <br>
+
+    <div class="azul01">
+        Primeiro Item
+
+    </div>
+    <div class="vermelho01">
+        Segundo Item
+
+    </div>
+    <div class="amarelo01">
+        Terceiro Item
+
+    </div>
+
+    <br><br>
+
+    <div class="azul02">
+        Primeiro Item
+
+    </div>
+    <div class="vermelho02">
+        Segundo Item
+
+    </div>
+    <div class="amarelo02">
+        Terceiro Item
+
+    </div>
+
+    <br><br>
+
+    <div class="azul02">
+        Primeiro Item
+
+    </div>
+    <div class="vermelho02" style="display: none;"> <!--O elemento não ocupa espaço na página e não é visível-->
+        Segundo Item
+
+    </div>
+    <div class="amarelo02">
+        Terceiro Item
+
+    </div>
+
+    <br><br>
+
+    <div class="azul02">
+        Primeiro Item
+
+    </div>
+    <div class="vermelho02" style="visibility: hidden;">
+        <!--O elemento ainda ocupa espaço na página, mas não é visível-->
+        Segundo Item
+
+    </div>
+    <div class="amarelo02">
+        Terceiro Item
+
+    </div>
+
+    <br><br><br>
+
+    <div class="exemplo01 borda">
+        Conteudo com 800px de largura.
+    </div>
+
+    <br>
+
+    <div class="exemplo02 borda">
+        Conteudo com 800px de largura.
+    </div>
+
+    <br><br>
+
+    <hr>
+
+
+    <h1 class="center">Posição</h1>
+
+    <br>
+
+    <div class="container">
+        <div class="div1">Primeira DIV</div>
+        <div class="div2">Segunda DIV</div>
+        <div class="div3">Terceira DIV</div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="div4">Quarta DIV</div>
+        <div class="div5">Quinta DIV</div>
+        <div class="div6">Sexta DIV</div>
+    </div>
+
+    <br><br>
+
+    <div class="container2">
+        <div class="div7">Setima DIV</div>
+        <div class="div8">Oitava DIV</div>
+        <div class="div9">Nona DIV</div>
+    </div>
+
+    <br><br>
+
+    <div class="container3">
+        <div class="div10">Decima DIV</div>
+        <div class="div11">Decima Primeira DIV</div>
+        <div class="div12">Decima Segunda DIV</div>
+    </div>
+
+    <br><br>
+
+    <div class="container4">
+        <img class="img2" src="../img/pexels-pixabay-158826.jpg">
+        <div class="centro">
+            <h2>Centralizado</h2>
+        </div>
+    </div>
+
+    <div class="whats">
+        whats
+    </div>
+
+    <br><br><br>
+
+    <a class="botao" href="index.html">Voltar ao topo</a>
+
+</body>
+
+</html>

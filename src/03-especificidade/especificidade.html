@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <link rel="stylesheet" href="/03-especificidade/css/especificidade.css">
+    <style>
+        /*dependendo do seletor, o estilo no head tem a menor importancia ao elemento... a classe sempre terá mais força que o seletor simples. Porem, ID são mais forte que classes*/
+        h2 {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="borda">Especificidade</h1>
+
+    <ul>
+        <li><a href="../01-introdução/index.html">Página Home</a></li>        
+        <li><a href="../02-float/float.html">Página Float</a></li>
+        <li><a href="../03-especificidade/especificidade.html">Página Especificidade</a></li>
+        <li><a href="../04-mediaqueries/mediaqueries.html">Página Media Queries</a></li>
+        <li class="login"><a href="#">Login</a></li>
+
+    </ul>
+
+    <h2 style="background: yellow;" class="red">Título Vermelho</h2>
+    <!--dependendo do seletor, o que está na tag tem sempre maior importancia... a classe sempre terá mais força que o seletor simples. Porem, ID são mais forte que classes-->
+
+    <h3>Três seletores iguais</h3>
+
+    <h4 id="meuid" class="minhaclasse">Regra Important</h4>
+
+    <h1>Efeito Gradiente</h1>
+    <h1 class="branco">Efeito Gradiente</h1>
+    <h1 class="diversas">Efeito Gradiente</h1>
+    <div id="gradiente1"></div> <!--div com gradiente--><br>
+    <div id="gradiente2"></div> <!--div com gradiente--><br>
+    <div id="gradiente3"></div> <!--div com gradiente--><br>
+    <div id="gradiente4"></div> <!--div com gradiente--><br>
+    <div id="gradiente5"></div> <!--div com gradiente--><br>
+
+    <div class="box1"></div>
+
+    <br><br>
+
+    <div class="box2">
+        <img src="/img/pexels-pixabay-158826.jpg" alt="Imagem de exemplo" style="max-width: 100%;"></img>
+        <h4 style="margin-bottom: 0; padding-bottom: 0;" class="reduzido">Isso é um card com o titulo muito grande, para
+            deixar a formatação mais complicada!</h4>
+        <p class="reduzido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    </div>
+
+</body>
+
+</html>

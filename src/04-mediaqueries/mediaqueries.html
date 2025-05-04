@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <link rel="stylesheet" href="/04-mediaqueries/css/mediaqueries.css">
+</head>
+
+<body>
+
+  <h1 class="center">Media Queries</h1>
+
+  <br>
+
+  <ul>
+    <li><a href="../01-introdução/index.html">Página Home</a></li>        
+    <li><a href="../02-float/float.html">Página Float</a></li>
+    <li><a href="../03-especificidade/especificidade.html">Página Especificidade</a></li>
+    <li><a href="../04-mediaqueries/mediaqueries.html">Página Media Queries</a></li>
+    <li class="login"><a href="#">Login</a></li>
+
+  </ul>
+
+  <br>
+
+  <p>Media Queries são um recurso do CSS que permite aplicar estilos condicionalmente, dependendo das características
+    do dispositivo ou da tela, como largura, altura, orientação, resolução, entre outras.</p>
+  <br>
+  <p>Elas são fundamentais no design responsivo, ou seja, no desenvolvimento de layouts que se adaptam bem a
+    diferentes tamanhos de tela (celular, tablet, desktop etc.).</p>
+
+  <br>
+
+  <section>
+    <h2>Conceito Básico</h2>
+    <p>A sintaxe básica de uma <strong>Media Query</strong> é:</p>
+
+    <pre><code>@media condição {
+        /* CSS que será aplicado se a condição for verdadeira */
+      }</code></pre>
+
+    <h2>Exemplo Prático</h2>
+    <p>Veja um exemplo em que o fundo da página muda dependendo da largura da tela:</p>
+
+    <pre><code>/* Estilo padrão (desktop) */
+      body {
+        background: white;
+      }
+      
+      /* Se a largura da tela for de até 768px (tablet ou celular), mude o fundo */
+      @media (max-width: 768px) {
+        body {
+          background: lightgray;
+        }
+      }</code></pre>
+  </section>
+
+  <hr>
+
+  <br>
+
+  <header class="header">
+
+    <h2>Flexbox</h2>
+    <p>Este é um layout flexivel!</p>
+
+  </header>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+  </nav>
+
+  <br>
+
+  <section>
+    <h2>Conceito Básico: Flexbox</h2>
+    <p>
+      O <strong>Flexbox</strong> (ou "Flexible Box Layout") é um modelo de layout unidimensional no CSS que facilita o
+      alinhamento, a distribuição e o espaçamento entre elementos em um contêiner, mesmo quando seu tamanho é
+      desconhecido ou dinâmico.
+    </p>
+
+    <p>A ativação do Flexbox ocorre com:</p>
+    <pre><code>display: flex;</code></pre>
+
+    <p>Isso transforma os elementos filhos diretos do contêiner em itens flexíveis.</p>
+
+    <h3>Propriedades mais comuns do contêiner (pai):</h3>
+
+    <code>flex-direction</code> — Define a direção dos itens (linha, coluna, etc).
+    <code>justify-content</code> — Alinha os itens no eixo principal (horizontal por padrão).
+    <code>align-items</code> — Alinha os itens no eixo transversal (vertical por padrão).
+    <code>flex-wrap</code> — Permite que os itens quebrem linha se não couberem.
+
+
+    <h3>Propriedades comuns dos itens (filhos):</h3>
+
+    <code>flex-grow</code> — Controla quanto o item pode crescer.
+    <code>flex-shrink</code> — Controla quanto o item pode encolher.
+    <code>flex-basis</code> — Define o tamanho inicial do item.
+    <code>align-self</code> — Permite sobrescrever o <code>align-items</code> individualmente.
+
+
+    <h3>Exemplo Prático:</h3>
+    <p>Um contêiner com três caixas alinhadas no centro:</p>
+
+    <pre><code>/* CSS */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background: steelblue;
+      }</code></pre>
+
+    <pre><code>&lt;!-- HTML --&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="box"&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      </code></pre>
+  </section>
+
+
+  <br>
+
+
+  <div class="flex-pai1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai3">
+    <div>0</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai7">
+    <div>0</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+  <br>
+
+  <div class="flex-pai9">
+    <div style="flex: 15%;">0</div>
+    <div style="flex: 75%;">1</div>
+    <div style="flex: 10%;">2</div>
+    <div style="flex: 50%;">3</div>
+    <div style="flex: 50%;">4</div>
+    <div style="flex: 25%;">5</div>
+    <div style="flex: 25%;">6</div>
+    <div style="flex: 50%;">7</div>
+
+  </div>
+
+</body>
+
+</html>
